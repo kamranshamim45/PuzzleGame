@@ -1,10 +1,13 @@
 {
   "name": "puzzlegame",
   "version": "1.0.0",
+  "homepage": "https://kamranshamim45.github.io/PuzzleGame",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -12,6 +15,7 @@
   },
   "devDependencies": {
     "vite": "^4.0.0",
-    "@vitejs/plugin-react": "^3.0.0"
+    "@vitejs/plugin-react": "^3.0.0",
+    "gh-pages": "^6.0.0"
   }
 }
